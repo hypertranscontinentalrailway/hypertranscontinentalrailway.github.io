@@ -1,303 +1,141 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* UTILITIES */
 
-html {
-  /* 10px / 16px = 0.625 =62.5*/
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+* {
+
+ margin: 0;
+
+ padding: 0;
+
+ box-sizing: border-box;
+
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  font-weight: 400;
-  overflow-x: hidden;
-  color: #523414;
-  background-color: #e9be5a;
-}
 
-.heading-primary,
-.heading-secondary,
-.heading-tertiary {
-  font-weight: 700;
-  color: #523414;
-  letter-spacing: -0.5px;
-}
+ font-family: cursive;
 
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 5.6rem;
-  text-align: center;
-}
-
-.heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin: 1.2rem;
 }
 
 a {
-  text-decoration: none;
+
+ text-decoration: none;
+
 }
 
-.first-fold {
-  background-image: url(img/Pawfect-bg.png);
-  min-height: 80rem;
+li {
+
+ list-style: none;
+
 }
 
-/* ****************** */
-/* Logo */
-/* ****************** */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  height: 9.6rem;
-  padding: 0 4.8rem;
-}
-
-.logo {
-  height: 2.2rem;
-  font-size: 3.6rem;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: #462d12;
-}
-
-/* ****************** */
-/* Navigation */
-/* ****************** */
+/* NAVBAR STYLING STARTS */
 
 .navbar {
+
  display: flex;
+
  align-items: center;
+
  justify-content: space-between;
+
  padding: 20px;
+
  background-color: teal;
+
  color: #fff;
+
 }
 
 .nav-links a {
+
  color: #fff;
+
 }
 
 /* LOGO */
 
 .logo {
+
  font-size: 32px;
+
 }
 
 /* NAVBAR MENU */
 
 .menu {
+
  display: flex;
+
  gap: 1em;
+
  font-size: 18px;
+
 }
 
 .menu li:hover {
+
  background-color: #4c9e9e;
+
  border-radius: 5px;
+
  transition: 0.3s ease;
+
 }
 
 .menu li {
+
  padding: 5px 14px;
+
 }
 
 /* DROPDOWN MENU */
 
 .services {
+
  position: relative; 
+
 }
 
 .dropdown {
+
  background-color: rgb(1, 139, 139);
+
  padding: 1em 0;
+
  position: absolute; /*WITH RESPECT TO PARENT*/
+
  display: none;
+
  border-radius: 8px;
+
  top: 35px;
+
 }
 
 .dropdown li + li {
+
  margin-top: 10px;
+
 }
 
 .dropdown li {
+
  padding: 0.5em 1em;
+
  width: 8em;
+
  text-align: center;
+
 }
 
 .dropdown li:hover {
+
  background-color: #4c9e9e;
+
 }
 
 .services:hover .dropdown {
+
  display: block;
-}
 
-/*responsive navbar menu*/
-input[type=checkbox]{
-
- display: none;
-
-} 
-
-/*HAMBURGER MENU*/
-
-.hamburger {
- display: none;
- font-size: 24px;
- user-select: none;
-}
-
-/* APPLYING MEDIA QUERIES */
-
-@media (max-width: 768px) {
-.menu { 
- display:none;
- position: absolute;
- background-color:teal;
- right: 0;
- left: 0;
- text-align: center;
- padding: 16px 0;
-}
-
-.menu li:hover {
- display: inline-block;
- background-color:#4c9e9e;
- transition: 0.3s ease;
-}
-
-.menu li + li {
- margin-top: 12px;
-}
-
-input[type=checkbox]:checked ~ .menu{
- display: block;
-}
-
-.hamburger {
- display: block;
-}
-
-.dropdown {
- left: 50%;
- top: 30px;
- transform: translateX(35%);
-}
-
-.dropdown li:hover {
- background-color: #4c9e9e;
-}
-}
-
-
-/* ****************** */
-/* Hero section */
-/* ****************** */
-.section-hero {
-  padding: 15rem 0 9.6rem;
-}
-
-.hero {
-  max-width: 100rem;
-  padding: 0 9.6rem;
-  align-items: left;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin: 4.8rem 0;
-}
-
-/* ****************** */
-/* Our Services */
-/* ****************** */
-.our-services {
-  padding: 9.6rem 0;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 1.5rem 3.2rem;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.services img {
-  width: 80%;
-  border-radius: 9px;
-}
-
-/* ****************** */
-/* About Us */
-/* ****************** */
-
-.grid-about {
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 0;
-  filter: drop-shadow(0px 12px 16px rgba(0, 0, 0, 0.2));  
-}
-
-.about {
-  padding: 2rem 0 7rem 0;
-}
-
-.about img {
-  width: 98%;
-  justify-self: end;
-  border-radius: 9px;
-}
-
-.about p {
-  font-size: 2.2rem;
-}
-
-.text {
-  max-width: 45rem;
-  background-color: #e7ac21;
-  padding: 10rem 5rem;
-  margin-left: -5rem;
-  border-radius: 9px;
-}
-
-.text h2 {
-  margin-bottom: 4.5rem;
-  text-align: center;
-}
-
-/* ****************** */
-/* Footer */
-/* ****************** */
-
-footer {
-  text-align: center;
-  background-color: #e7ac21;
-  padding: 2.5rem;
 }
