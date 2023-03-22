@@ -4,6 +4,18 @@
  box-sizing: border-box;
 }
 
+body {
+  font-family: system-ui;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .logo-word {
   font-size: 32px;
   color: blue;
