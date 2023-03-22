@@ -57,6 +57,14 @@ ul {
  transition: 0.3s ease;
 }
 
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
 .menu li {
  padding: 5px 14px;
 }
