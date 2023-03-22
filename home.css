@@ -46,6 +46,7 @@ li {
 
 .menu li {
  padding: 5px 14px;
+ display: inline;
 }
 
 .services {
