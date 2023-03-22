@@ -16,16 +16,28 @@ li {
   list-style: none;
 }
 
-.logo-word {
-  font-size: 32px;
-  color: blue;
-}
-
-.nav-menu {
+.nav {
  display: flex;
  align-items: center;
  justify-content: space-between;
  padding: 20px;
  background-color: teal;
  color: #fff;
+}
+
+.logo-word {
+  font-size: 32px;
+  color: blue;
+}
+
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
 }
