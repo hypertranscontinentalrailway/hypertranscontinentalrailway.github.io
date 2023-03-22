@@ -3,3 +3,8 @@
  padding: 0;
  box-sizing: border-box;
 }
+
+.logo-word {
+  font-size: 32px;
+  color: blue;
+}
