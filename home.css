@@ -40,6 +40,11 @@ ul {
   color: blue;
 }
 
+
+.nav-menu {
+  background-color: teal;
+}
+
 .menu {
  display: flex;
  gap: 1em;
