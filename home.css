@@ -41,6 +41,7 @@ ul {
 
 .nav-menu {
   background-color: teal;
+  display: inline;
 }
 
 .menu {
