@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <title>新大陸高速鉄道</title>
-  </head>
-  <body>
-    <header>
-      <nav class="nav">
-        <div class="logo-word">HTR</div>
-        <ul class="nav-menu">
-         <li><a href="/">Home</a></li>
-         <li><a href="/">About</a></li>
-         <li class="services">
-           <a href="/">Services</a>
-           <ul class="dropdown">
-             <li><a href="/">Dropdown 1</a></li>
-             <li><a href="/">Dropdown 2</a></li>
-             <li><a href="/">Dropdown 3</a></li>
-             <li><a href="/">Dropdown 4</a></li>
-           </ul>
-         </li>
-         <li><a href="/">Pricing</a></li>
-         <li><a href="/">Contact</a></li>
-       </ul>
-      </nav>
-    </header>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <title>新大陸高速鉄道</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="icon" onclick="myFunction()"><a>&#9776;</a></li>
+  </ul>
+</div>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
 </html>
-  
+
+
