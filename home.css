@@ -17,7 +17,11 @@ li {
 }
 
 img {
- vertical-align: middle;
+  vertical-align: middle;
+}
+
+body {
+  font-family: system-ui;
 }
 
 .topnav a.active {
