@@ -170,7 +170,7 @@ li.dropdown {
 }
 
 .delay-info {
-  display: block;
+  display: inline-block;
   background-color: crimson; 
   margin-left: 16px;
   margin-right: 16px;
@@ -178,7 +178,7 @@ li.dropdown {
 }
 
 .delay-info h4 {
-  display: inline;
+  display: inline-block;
   font-size: 2em;
 }
  
