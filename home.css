@@ -172,6 +172,7 @@ li.dropdown {
 .hwrap {
   overflow: hidden; /* HIDE SCROLL BAR */
   background: #eee;
+  
 }
  
 .hmove { display: flex; }
@@ -189,5 +190,5 @@ li.dropdown {
   0% { transform: translate3d(100%, 0, 0); }
   100% { transform: translate3d(-100%, 0, 0); }
 }
-.hmove { animation: tickerh linear 45s infinite; }
+.hmove { animation: tickerh linear 15s infinite; }
 .hmove:hover { animation-play-state: paused; }
