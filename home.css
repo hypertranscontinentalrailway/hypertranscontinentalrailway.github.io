@@ -185,3 +185,7 @@ li.dropdown {
 .delay-display {
  background-color: whitesmoke;
 }
+
+.delay-info a {
+ background-color: teal;
+}
