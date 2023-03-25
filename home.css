@@ -170,10 +170,14 @@ li.dropdown {
 }
 
 .delay-info {
- display: inline;
- background-color: crimson; 
+  display: block;
+  background-color: crimson; 
 }
 
+.delay-info h4 {
+  display: inline;
+}
+ 
 .delay-display {
  background-color: whitesmoke;
 }
