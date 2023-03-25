@@ -172,6 +172,8 @@ li.dropdown {
 .delay-info {
   display: block;
   background-color: crimson; 
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .delay-info h4 {
