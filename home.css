@@ -170,19 +170,20 @@ li.dropdown {
 }
 
 .delay-info {
-  display: inline-block;
-  background-color: crimson; 
   margin-left: 16px;
   margin-right: 16px;
-  width: 100%;
 }
 
 .delay-info h4 {
-  display: inline-block;
+  display: inline;
   font-size: 2em;
 }
- 
-.delay-display {
+
+.delay-info .1 {
+  background-color: crimson;
+}
+
+.delay-info .2 {
  background-color: whitesmoke;
 }
 
