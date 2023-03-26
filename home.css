@@ -175,8 +175,8 @@ li.dropdown {
 }
 
 .delay-info h4 {
-  display: inline;
-  font-size: 2em;
+  display: grid;
+  font-size: 1.5em;
 }
 
 .delay-info .box1 {
