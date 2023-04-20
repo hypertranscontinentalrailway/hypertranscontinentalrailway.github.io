@@ -1,1 +1,15 @@
+.navbar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
+.banner {
+  float: left;
+  width: 25%;
+}
+
+.menu {
+  float: left;
+  width: 75%;
+}
