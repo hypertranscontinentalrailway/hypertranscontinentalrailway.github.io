@@ -1,3 +1,9 @@
+.navbar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .banner {
   float: left;
   width: 25%;
@@ -6,4 +12,30 @@
 .menu {
   float: left;
   width: 75%;
+}
+
+.choose-box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.train-info {
+  float: left;
+  width: 50%;
+}
+
+.other-services {
+  float: left;
+  width: 50%;
+}
+
+.sightseeing {
+  float: left;
+  width: 50%;
+}
+
+.about-htr {
+  float: left;
+  width: 50%;
 }
