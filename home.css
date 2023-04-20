@@ -1,9 +1,3 @@
-.navbar:after {
-  content: "hello";
-  display: block;
-  clear: both;
-}
-
 .banner {
   float: left;
   width: 25%;
