@@ -8,111 +8,46 @@
   </head>
   <body>
 
-    <div class="topnav" id="myTopnav">
-      <ul>
-        <li><a href="/" class="active"><b><i>トップページ</i></b></a></li>
-        <li><a href="#news">新大陸高速鉄道について</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">路線・駅のご案内</a>
-          <div class="dropdown-content">  
-            <a href="#">路線図</a>
-            <a href="#">時刻表</a>
-            <a href="#">駅構内図</a>
-          </div>
-        </li>
-        <li class="icon" onclick="myFunction()"><a>&#9776;</a></li>
-      </ul>
+    <div class="banner">
+      HTR
     </div>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
-
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="images/this_site_is_fiction.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/this_site_is_fiction.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/this_site_is_fiction.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-
+    <div class="menu">
+      Menu
     </div>
-    <br>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+    <div class="top-image">
+      Yay
+    </div>
+
+    <div class="delay">
+      15 minutes
+    </div>
+
+    <div class="news">
+      Site opened!
+    </div>
+
+    <div class="choose-box>
+      <div class="train-info">
+        Tickets & fares
+      </div>
+      <div class="other-services">
+        Taxis!
+      </div>
+      <div class="sightseeing">
+        Mountain glory.
+      </div>
+      <div class="about-htr">
+        About our company
+      </div>
     </div>
     
-    <script>
-      let slideIndex = 0;
-      showSlides();
-
-      function plusSlides(n) {
-        showSlide(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlide(slideIndex = n);
-      }
-
-      function showSlide(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active-slide", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active-slide";
-      }
-
-      function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active-slide", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active-slide";
-        setTimeout(showSlides, 15000); // Change image every 2 seconds
-      }
-    </script>
-    
-    <div class="delay-info">
-      <h4 class="box1">運行情報</h4>
-      <h4 class="box2"> 現在、大きな遅れはありません。<a>詳細</a></h4>
+    <div class="footer">
+      copyright 2023 Hyper Transcontinental Railway
     </div>
-  
   </body>
 </html>
+
+
+     
