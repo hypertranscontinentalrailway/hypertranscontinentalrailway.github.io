@@ -1,5 +1,5 @@
 .navbar:after {
-  content: "";
+  content: "hello";
   display: block;
   clear: both;
 }
