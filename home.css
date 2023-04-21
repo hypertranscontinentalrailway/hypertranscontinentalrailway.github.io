@@ -17,6 +17,7 @@
   width: 25%;
   background-color: dodgerblue;
   padding: 5px;
+  display: float;
 }
 
 .banner a {
