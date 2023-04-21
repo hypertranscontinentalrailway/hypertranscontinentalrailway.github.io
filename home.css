@@ -3,6 +3,7 @@
 }
 
 .navbar {
+  background-color: forestgreen;
 }
 
 .navbar:after {
@@ -15,12 +16,10 @@
   float: left;
   width: 25%;
   background-color: dodgerblue;
-  padding: 5px;
-  display: float;
 }
 
 .banner a {
-  padding: 3px;
+  padding: 5px;
   color: white;
   text-decoration: none;
 }
