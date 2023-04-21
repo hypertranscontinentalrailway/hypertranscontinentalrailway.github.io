@@ -1,6 +1,5 @@
 .navbar {
   background-color: forestgreen;
-  padding: 5px;
 }
 
 .navbar:after {
@@ -14,6 +13,11 @@
   width: 25%;
   background-color: dodgerblue;
   padding: 5px;
+}
+
+.banner a {
+  padding: 3px;
+  color: white;
 }
 
 .menu {
