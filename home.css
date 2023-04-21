@@ -12,6 +12,8 @@
 .banner {
   float: left;
   width: 25%;
+  background-color: dodgerblue;
+  padding: 5px;
 }
 
 .menu {
