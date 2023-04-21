@@ -59,10 +59,11 @@
 }
 
 img {
-  width: 1900px;
+  width: 1000px;
   max-width: 100%;
   height: auto;
   align: center;
+  padding: 30px;
 }
 
 .train-info, .other-sevices, .sightseeing, .about-htr {
