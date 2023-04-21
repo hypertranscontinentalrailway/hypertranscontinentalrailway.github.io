@@ -43,3 +43,7 @@
 .dp1, .dp2, .dp3, .dp4, .dp5 {
   display: none;
 }
+
+.nav1, .nav2, .nav3, .nav4, .nav5 {
+  float: left;
+}
