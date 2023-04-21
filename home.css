@@ -58,12 +58,15 @@
   display: block;
 }
 
-img {
+.top-image {
   display: block;
-  width: 1000px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+img {
   max-width: 100%;
   height: auto;
-  align: center;
   padding: 30px;
 }
 
