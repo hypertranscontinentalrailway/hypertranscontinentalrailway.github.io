@@ -47,3 +47,9 @@
 .nav1, .nav2, .nav3, .nav4, .nav5 {
   float: left;
 }
+
+.navlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
