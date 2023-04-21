@@ -31,7 +31,7 @@
 
 .menu li {
   float: left;
-  width: 126px;
+  width: auto;
 }
 
 .menu li a {
@@ -51,6 +51,7 @@
 .dp1, .dp2, .dp3, .dp4, .dp5 {
   display: none;
   background-color: #f9f9f9;
+  position: absolute;
 }
 
 .nav1:hover .dp1, .nav2:hover .dp2, .nav3:hover .dp3, .nav4:hover .dp4, .nav5:hover .dp5 {
