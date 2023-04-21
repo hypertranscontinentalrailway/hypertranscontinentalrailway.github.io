@@ -44,8 +44,9 @@
   display: none;
 }
 
-.nav1, .nav2, .nav3, .nav4, .nav5 {
+.menu li {
   float: left;
+  width: auto;
 }
 
 .navlist {
