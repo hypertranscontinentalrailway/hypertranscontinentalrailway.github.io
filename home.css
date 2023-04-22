@@ -32,6 +32,7 @@
 .menu li {
   float: left;
   width: auto;
+  margin: 10px;
 }
 
 .menu li a {
