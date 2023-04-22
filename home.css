@@ -1,9 +1,11 @@
 * {
   font-family: 'M PLUS 1p', sans-serif;
+  padding: 0 5px;
 }
 
 .navbar {
   background-color: forestgreen;
+  padding: 0;
 }
 
 .navbar:after {
