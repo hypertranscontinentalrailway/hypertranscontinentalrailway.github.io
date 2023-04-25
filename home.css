@@ -59,7 +59,7 @@ body {
 
 .dp1, .dp2, .dp3, .dp4, .dp5 {
   display: none;
-  background-color: #f9f9f9;
+  background-color: forestgreen;
   position: absolute;
   z-index: 25;
 }
