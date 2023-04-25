@@ -62,7 +62,7 @@ body {
   background-color: forestgreen;
   position: absolute;
   z-index: 25;
-  border-radius: 0 0 15% 15%;
+  border-radius: 0% 0% 15% 15%;
 }
 
 .nav1:hover .dp1, .nav2:hover .dp2, .nav3:hover .dp3, .nav4:hover .dp4, .nav5:hover .dp5 {
