@@ -195,6 +195,45 @@ img {
   margin-right: 15px;
 }
 
+.newsbox {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.newsbox h1 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: lightseagreen;
+}
+
+.news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news li a {
+  display: block;
+  padding: 5px;
+  border-bottom: solid 2px whitesmoke;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.news li a:hover {
+  background-color: #eeeeee;
+}
+
+.news time {
+  margin-right: 10px;
+  color: #888888;
+  font-weight: bold;
+}
+
 .train-info, .other-sevices, .sightseeing, .about-htr {
   float: left;
   width: 50%;
