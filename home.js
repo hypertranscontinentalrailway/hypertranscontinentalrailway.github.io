@@ -1,6 +1,10 @@
 let slideIndex = 1;
-showSlides(slideIndex);
-setTimeout(TimeKeepers, 5000);
+
+function starterFunction() {
+  showSlides(slideIndex);
+  setTimeout(TimeKeepers, 5000);
+  scrollSmoothlyToBottom('scrollbox');
+}
 
 function TimeKeepers() {
   plusSlides(1);
@@ -34,8 +38,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-      
-scrollSmoothlyToBottom('scrollbox');
    
 function scrollSmoothlyToBottom(id) {
   const element = $(`#${id}`);
