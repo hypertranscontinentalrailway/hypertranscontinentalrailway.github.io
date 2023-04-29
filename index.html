@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>新大陸高速鉄道</title>
   </head>
   <body>
@@ -127,8 +128,27 @@
     </script>
 
     <div class="delay">
-      <h3>運行情報：現在、大きな遅れはありません。詳細</h3>
+      <div id="scrollbox">
+        <div class="yes">運行情報</div>
+        <div id="clas">平常通り運転しています</div>
+        <div class="no">詳細</div>
+      </div>
     </div>
+
+    <script>
+      scrollSmoothlyToBottom('scrollbox');
+      
+      function scrollSmoothlyToBottom(id) {
+        const element = $(`#${id}`);
+        element.animate({scrollLeft: element.prop("scrollWidth")}, 4000, 'linear');
+        setTimeout(scrollSmoothlyToTop, 4000, 'scrollbox');
+        setTimeout(scrollSmoothlyToBottom, 4000, 'scrollbox')
+      }
+
+       function scrollSmoothlyToTop(id) {
+        $(`#${id}`).animate({scrollLeft: 0,}, 0);
+      }
+    </script>
 
     <div class="news">
       <h2>ニュース・おしらせ</h2>
