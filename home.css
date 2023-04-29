@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.navbar: after {
+.navbar::after {
   content: "";
   display: block;
   clear: both;
@@ -27,7 +27,7 @@ body {
 
 .banner a {
   padding: 5px;
-  color: white;
+  color: lightblue;
   text-decoration: none;
   font-size: 18px;
 }
@@ -57,7 +57,7 @@ body {
   list-style: none;
 }
 
-.dp1, .dp2, .dp3, .dp4, .dp5 {
+.dropdown {
   display: none;
   background-color: forestgreen;
   position: absolute;
@@ -65,7 +65,7 @@ body {
   border-radius: 0 0 5px 5px;
 }
 
-.nav1:hover .dp1, .nav2:hover .dp2, .nav3:hover .dp3, .nav4:hover .dp4, .nav5:hover .dp5 {
+.nav:hover .dropdown {
   display: block;
 }
 
@@ -160,7 +160,7 @@ img {
   background-color: black;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin: 0 0.5em;
+  margin: 0 15px;
 }
 
 .delay-content {
@@ -180,7 +180,7 @@ img {
   background-color: red;
   z-index: 20;
   padding: 0 1em;
-  margin-left: 0.5em;
+  margin-left: 15px;
 }
 
 .right-stick {
@@ -192,7 +192,7 @@ img {
   padding: 0 0.5em;
   background-color: blue;
   color: white;
-  margin-right: 0.5em;
+  margin-right: 15px;
 }
 
 .train-info, .other-sevices, .sightseeing, .about-htr {
