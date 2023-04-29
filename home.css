@@ -234,13 +234,7 @@ img {
   font-weight: bold;
 }
 
-.newsbox::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.train-info, .other-sevices, .sightseeing, .about-htr {
+.tile {
   float: left;
   width: 50%;
 }
