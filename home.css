@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.navbar:after {
+.navbar: after {
   content: "";
   display: block;
   clear: both;
@@ -29,7 +29,7 @@ body {
   padding: 5px;
   color: white;
   text-decoration: none;
-  text-size: 18px;
+  font-size: 18px;
 }
 
 .menu {
@@ -48,7 +48,7 @@ body {
   padding: 5px;
   color: black;
   text-decoration: none;
-  text-size: 14px;
+  font-size: 14px;
 }
 
 .navlist {
@@ -67,11 +67,6 @@ body {
 
 .nav1:hover .dp1, .nav2:hover .dp2, .nav3:hover .dp3, .nav4:hover .dp4, .nav5:hover .dp5 {
   display: block;
-}
-
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
 }
 
 .mySlides {
@@ -150,45 +145,54 @@ img {
   .prev, .next { font-size: 11px; } ;
 }
 
+.delay {
+  max-width: 37.5em;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  z-index: 10;
+  font-size: 1.5em;
+}
+
 #scrollbox {
   width: auto;
-  height: 25px;
+  height: 35px;
   background-color: black;
   overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0 0.5em;
 }
 
-#clas {
-  height: 25px;
-  width: 200px;
+.delay-content {
+  height: 35px;
+  width: 82.5em;
   background-color: black;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 33em;
+  padding-right: 28.5em;
+  color: white;
 }
 
-.yes {
+.left-stick {
   position: absolute;
   left: 0;
-  height: 25px;
+  height: 35px;
   width: auto;
   background-color: red;
   z-index: 20;
+  padding: 0 1em;
+  margin-left: 0.5em;
 }
 
-.bigbox {
-  max-width: 400px;
-  position: relative;
-  margin: auto;
-  padding: 0px 15px;
-  z-index: 10;
-}
-
-.no {
+.right-stick {
   position: absolute;
   right: 0;
   top: 0;
-  height: 25px;
+  height: 35px;
   width: auto;
+  padding: 0 0.5em;
   background-color: blue;
+  color: white;
+  margin-right: 0.5em;
 }
 
 .train-info, .other-sevices, .sightseeing, .about-htr {
@@ -196,7 +200,7 @@ img {
   width: 50%;
 }
 
-.choose-box:after {
+.choose-box: after {
   content: "";
   display: block;
   clear: both;
