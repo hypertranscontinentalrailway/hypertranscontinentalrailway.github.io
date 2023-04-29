@@ -33,17 +33,17 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  }
+}
       
-  scrollSmoothlyToBottom('scrollbox');
+scrollSmoothlyToBottom('scrollbox');
    
-  function scrollSmoothlyToBottom(id) {
-    const element = $(`#${id}`);
-    element.animate({scrollLeft: element.prop("scrollWidth")}, 8000, 'linear');
-    setTimeout(scrollSmoothlyToTop, 8000, 'scrollbox');
-    setTimeout(scrollSmoothlyToBottom, 8000, 'scrollbox')
-  }
+function scrollSmoothlyToBottom(id) {
+  const element = $(`#${id}`);
+  element.animate({scrollLeft: element.prop("scrollWidth")}, 8000, 'linear');
+  setTimeout(scrollSmoothlyToTop, 8000, 'scrollbox');
+  setTimeout(scrollSmoothlyToBottom, 8000, 'scrollbox')
+}
 
-  function scrollSmoothlyToTop(id) {
-    $(`#${id}`).animate({scrollLeft: 0,}, 0);
-  }
+function scrollSmoothlyToTop(id) {
+  $(`#${id}`).animate({scrollLeft: 0,}, 0);
+}
