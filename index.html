@@ -40,7 +40,6 @@
             <div class="dp3">
               <a href="#">観光に便利な切符</a>
               <a href="#">南山へ行こう!</a>
-              </a>
             </div>
           </li>
           <li class="nav4">
@@ -78,14 +77,13 @@
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
       
-      </div>
-      <br>
+    </div>
+    <br>
       
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
 
     <script>
@@ -129,9 +127,9 @@
 
     <div class="delay">
       <div id="scrollbox">
-        <div class="yes">運行情報</div>
-        <div id="clas">平常通り運転しています</div>
-        <div class="no">詳細</div>
+        <div class="left-stick">運行情報</div>
+        <div class="delay-content">平常通り運転しています</div>
+        <div class="right-stick">詳細</div>
       </div>
     </div>
 
@@ -140,9 +138,9 @@
       
       function scrollSmoothlyToBottom(id) {
         const element = $(`#${id}`);
-        element.animate({scrollLeft: element.prop("scrollWidth")}, 4000, 'linear');
-        setTimeout(scrollSmoothlyToTop, 4000, 'scrollbox');
-        setTimeout(scrollSmoothlyToBottom, 4000, 'scrollbox')
+        element.animate({scrollLeft: element.prop("scrollWidth")}, 8000, 'linear');
+        setTimeout(scrollSmoothlyToTop, 8000, 'scrollbox');
+        setTimeout(scrollSmoothlyToBottom, 8000, 'scrollbox')
       }
 
        function scrollSmoothlyToTop(id) {
@@ -174,5 +172,6 @@
     <div class="footer">
       <h4>2023 新大陸高速鉄道</h4>
     </div>
+    
   </body>
 </html>
