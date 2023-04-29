@@ -1,49 +1,49 @@
 let slideIndex = 1;
-      showSlides(slideIndex);
-      setTimeout(TimeKeepers, 5000);
+showSlides(slideIndex);
+setTimeout(TimeKeepers, 5000);
 
-      function TimeKeepers() {
-        plusSlides(1);
-        setTimeout(TimeKeepers, 5000);
-      }
+function TimeKeepers() {
+  plusSlides(1);
+  setTimeout(TimeKeepers, 5000);
+}
 
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }    
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-        
-        scrollSmoothlyToBottom('scrollbox');
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }    
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  }
       
-      function scrollSmoothlyToBottom(id) {
-        const element = $(`#${id}`);
-        element.animate({scrollLeft: element.prop("scrollWidth")}, 8000, 'linear');
-        setTimeout(scrollSmoothlyToTop, 8000, 'scrollbox');
-        setTimeout(scrollSmoothlyToBottom, 8000, 'scrollbox')
-      }
+  scrollSmoothlyToBottom('scrollbox');
+   
+  function scrollSmoothlyToBottom(id) {
+    const element = $(`#${id}`);
+    element.animate({scrollLeft: element.prop("scrollWidth")}, 8000, 'linear');
+    setTimeout(scrollSmoothlyToTop, 8000, 'scrollbox');
+    setTimeout(scrollSmoothlyToBottom, 8000, 'scrollbox')
+  }
 
-       function scrollSmoothlyToTop(id) {
-        $(`#${id}`).animate({scrollLeft: 0,}, 0);
-      }
+  function scrollSmoothlyToTop(id) {
+    $(`#${id}`).animate({scrollLeft: 0,}, 0);
+  }
