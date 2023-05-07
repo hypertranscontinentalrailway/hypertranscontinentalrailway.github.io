@@ -237,6 +237,7 @@ img {
 .tile {
   float: left;
   width: 50%;
+  padding: 8px;
 }
 
 .choose-box: after {
