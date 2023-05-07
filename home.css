@@ -256,7 +256,11 @@ img {
 .about i {
   background-color: purple;
 }
-  
+
+.tile-icon {
+  font-size: 2em;
+  color: gray;
+}
 
 .choose-box: after {
   content: "";
