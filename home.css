@@ -246,8 +246,6 @@ img {
 }
 
 .serv i {
-  width: 50%;
-  margin; auto;
   background-color: yellow;
 }
 
@@ -260,7 +258,8 @@ img {
 }
 
 .tile-icon {
-  font-size: 2em;
+  width: 50%;
+  font-size: 4em;
   color: gray;
 }
 
