@@ -260,6 +260,7 @@ img {
 .tile-icon {
   font-size: 2em;
   color: gray;
+  margin: auto;
 }
 
 .choose-box: after {
