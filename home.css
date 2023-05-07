@@ -238,6 +238,7 @@ img {
   float: left;
   width: 50%;
   padding: 8px;
+  text-align: center;
 }
 
 .rail i {
@@ -260,7 +261,6 @@ img {
 .tile-icon {
   font-size: 2em;
   color: gray;
-  margin: auto;
 }
 
 .choose-box: after {
