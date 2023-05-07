@@ -241,6 +241,13 @@ img {
   text-align: center;
 }
 
+.innerbox {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  padding: 0;
+}
+
 .rail i {
   background-color: blue;
 }
@@ -258,9 +265,22 @@ img {
 }
 
 .tile-icon {
-  width: 50%;
+  width: 100%;
   font-size: 4em;
   color: gray;
+  text-align: center;
+}
+
+.innerbox h2 {
+  width: 100%;
+  font-size: 2.5em;
+  background-color: whitesmoke;
+}
+  
+.innerbox p {
+  width: 100%;
+  font-size: 1em;
+  background-color: whitesmoke;
 }
 
 .choose-box: after {
