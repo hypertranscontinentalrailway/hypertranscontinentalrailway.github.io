@@ -240,6 +240,23 @@ img {
   padding: 8px;
 }
 
+.rail i {
+  background-color: blue;
+}
+
+.serv i {
+  background-color: yellow;
+}
+
+.sight i {
+  background-color: green;
+}
+
+.about i {
+  background-color: purple;
+}
+  
+
 .choose-box: after {
   content: "";
   display: block;
