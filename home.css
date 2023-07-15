@@ -247,6 +247,7 @@ img {
   position: relative;
   padding: 0;
   background-color: whitesmoke;
+  padding: 12px;
 }
 
 .rail i {
